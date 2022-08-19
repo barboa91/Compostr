@@ -40,19 +40,19 @@ const NewLogin = ({setNavBool}) =>{
     const navigate = useNavigate()
 
 
-   const handleSubmitSignUp = async (e) => {
-		e.preventDefault();
-		try {
-			const url = "http://localhost:4000/api/users";
-			const { data: res } = await axios.post(url, data);
-			navigate("/");
-            alert(res.message)
-			console.log(res.message);
-		} catch (error) {
-            alert("Please use a different password")
-			console.log(error.response.data)
-		}
-	};
+   //const handleSubmitSignUp = async (e) => {
+// 		e.preventDefault();
+//		try {
+//			const url = "http://localhost:4000/api/users";
+//			const { data: res } = await axios.post(url, data);
+//			navigate("/");
+//            alert(res.message)
+//			console.log(res.message);
+//		} catch (error) {
+//            alert("Please use a different password")
+//			console.log(error.response.data)
+//		}
+//	};
 
 
     setNavBool(false)
